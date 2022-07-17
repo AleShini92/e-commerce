@@ -25,7 +25,7 @@ $colors: (
 ) !default;
 
 
-//button landing page
+//color bg, txt, btn landing page
 @each $key, $val in $colors {
   .text-#{$key} {
     color: $val;
@@ -37,6 +37,14 @@ $colors: (
 
   .btn-#{$key} {
     border: 1px solid $val;
+
+    &:hover {
+      background: $val;
+
+      a {
+        color: $_white;
+      }
+    }
   }
 }
 
