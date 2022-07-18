@@ -18,6 +18,10 @@ nav {
     display: flex;
     transition: .8s ease-in-out;
 
+    svg {
+        width: 15px;
+    }
+
     a, svg {
         transition: 1s ease-in-out;
     }

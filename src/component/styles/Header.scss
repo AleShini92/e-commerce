@@ -1,0 +1,18 @@
+.wrapper-header {
+    height: 95vh;
+    overflow: hidden;
+
+    figure {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 120vh;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
