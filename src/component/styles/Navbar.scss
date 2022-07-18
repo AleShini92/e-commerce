@@ -2,14 +2,6 @@ nav {
     box-shadow: 0 3px 5px rgba($color: $_black, $alpha: .10);
 }
 
-.wrapper-navbar {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 .menu {
     ul {
         li {
@@ -17,11 +9,6 @@ nav {
             margin: 0 $s-2;
         }
     }
-}
-
-.wrapper-button {
-    column-gap: 10px;
-    display: flex;
 }
 
 .login {
@@ -43,4 +30,17 @@ nav {
         color: $_white;
         fill: $_white;
     }
+}
+
+.wrapper-button {
+    column-gap: 10px;
+    display: flex;
+}
+
+.wrapper-navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
 }
