@@ -11,23 +11,15 @@ nav {
     }
 }
 
-.login {
-    border-radius: $s-1;
+.button {
     column-gap: $s-2;
-
-    display: flex;
-    transition: .8s ease-in-out;
-
+    
     svg {
         width: 15px;
     }
 
     a, svg {
         transition: 1s ease-in-out;
-    }
-
-    &:hover {
-        background: $_black;
     }
 
     &:hover a, &:hover svg {

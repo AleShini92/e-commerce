@@ -15,5 +15,22 @@ a {
 }
 
 .btn {
+    background: transparent;
     padding: s.$s-2 s.$s-2;
+}
+
+// custom all button
+.button {
+    border-radius: s.$s-1;
+    transition: .8s ease-in-out;
+
+    &:hover {
+        background: $_black;
+        color: $_white;
+    }
+}
+
+// display flex
+.d-flex {
+    display: flex;
 }

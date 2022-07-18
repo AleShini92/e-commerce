@@ -26,8 +26,34 @@ const Products = () => {
         getProducts();
     }, []);
 
+    const Loading = () => {
+        return (
+            <>
+                Loading...
+            </>
+        );
+    }
+
+    const ShowProducts = () => {
+        return (
+            <>
+                <div className="buttons">
+                    <button className='button btn btn-black'>All</button>
+                    <button className='button btn btn-black'>Men's Clothing</button>
+                    <button className='button btn btn-black'>Women's Clothing</button>
+                    <button className='button btn btn-black'>Jewelery</button>
+                    <button className='button btn btn-black'>Electronic</button>
+                </div>
+            </>
+        );
+    }
+
     return (
         <>
+            <div className="wrapper-products">
+                <h2>Latest products</h2>
+                {loading ? <Loading /> : <ShowProducts />}
+            </div>
         </>
     );
 }
