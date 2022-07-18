@@ -1,1 +1,1 @@
-header{display:flex;justify-content:space-between}
+.wrapper-header{height:95vh;overflow:hidden}.wrapper-header figure{display:flex;justify-content:center}.wrapper-header figure img{height:120vh}.wrapper-header figure figcaption{display:flex;flex-direction:column}
