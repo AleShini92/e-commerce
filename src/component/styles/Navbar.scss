@@ -1,0 +1,46 @@
+nav {
+    box-shadow: 0 3px 5px rgba($color: $_black, $alpha: .10);
+}
+
+.wrapper-navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.menu {
+    ul {
+        li {
+            display: inline;
+            margin: 0 $s-2;
+        }
+    }
+}
+
+.wrapper-button {
+    column-gap: 10px;
+    display: flex;
+}
+
+.login {
+    border-radius: $s-1;
+    column-gap: $s-2;
+
+    display: flex;
+    transition: .8s ease-in-out;
+
+    a, svg {
+        transition: 1s ease-in-out;
+    }
+
+    &:hover {
+        background: $_black;
+    }
+
+    &:hover a, &:hover svg {
+        color: $_white;
+        fill: $_white;
+    }
+}

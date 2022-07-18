@@ -37,14 +37,6 @@ $colors: (
 
   .btn-#{$key} {
     border: 1px solid $val;
-
-    &:hover {
-      background: $val;
-
-      a {
-        color: $_white;
-      }
-    }
   }
 }
 

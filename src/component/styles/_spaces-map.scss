@@ -30,6 +30,20 @@ $m-20: 20px;
 $m-30: 30px;
 $m-40: 40px;
 $m-50: 50px;
+
+$margin: (
+  "m-10": $m-10,
+  "m-20": $m-20,
+  "m-30": $m-30,
+  "m-40": $m-40,
+  "m-50": $m-50
+);
+
+@each $key, $val in $margin {
+  .#{$key} {
+    margin: $val;
+  }
+}
  
 /*
  * padding in pixel
@@ -41,6 +55,20 @@ $p-2: 20px;
 $p-3: 30px;
 $p-4: 40px;
 $p-5: 50px;
+
+$padding: (
+  "p-1": $p-1,
+  "p-2": $p-2,
+  "p-3": $p-3,
+  "p-4": $p-4,
+  "p-5": $p-5
+);
+
+@each $key, $val in $padding {
+  .#{$key} {
+    padding: $val;
+  }
+}
 
 /*
  * width in percent
@@ -54,6 +82,20 @@ $w-70:  70%;
 $w-60:  60%;
 $w-50:  50%;
 
+$width: (
+  "w-100": $w-100,
+  "w-90": $w-90,
+  "w-80": $w-80,
+  "w-70": $w-70,
+  "w-60": $w-60,
+  "w-50": $w-50
+);
+
+@each $key, $val in $width {
+  .#{$key} {
+    width: $val;
+  }
+}
 /*
  * width in pixel
  *

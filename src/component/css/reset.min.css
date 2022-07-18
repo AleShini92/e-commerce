@@ -1,1 +1,1 @@
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}
+.m-10{margin:10px}.m-20{margin:20px}.m-30{margin:30px}.m-40{margin:40px}.m-50{margin:50px}.p-1{padding:10px}.p-2{padding:20px}.p-3{padding:30px}.p-4{padding:40px}.p-5{padding:50px}.w-100{width:100%}.w-90{width:90%}.w-80{width:80%}.w-70{width:70%}.w-60{width:60%}.w-50{width:50%}*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}a{text-decoration:none}.btn{padding:.5rem 1.5rem}

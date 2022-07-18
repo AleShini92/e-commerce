@@ -1,5 +1,6 @@
+//import style scss
 import './App.scss';
-
+//import components
 import Navbar from './component/navbar/Navbar';
 
 function App() {
