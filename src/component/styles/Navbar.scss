@@ -7,6 +7,14 @@ nav {
         li {
             display: inline;
             margin: 0 $s-2;
+
+            a {
+                color: $_link;
+
+                &:hover {
+                    color: $_black;
+                }
+            }
         }
     }
 }
