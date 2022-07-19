@@ -38,6 +38,10 @@ $colors: (
   .btn-#{$key} {
     border: 1px solid $val;
   }
+
+  .outline-#{$key} {
+    border: 1px solid $val;
+  }
 }
 
 // scss-docs-start theme-color-variables

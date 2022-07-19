@@ -7,6 +7,12 @@ $spacers: (
   4: $spacer * 3,
 );
 
+@each $key, $val in $spacers {
+  .b-radius-#{$key} {
+    border-radius: $val;
+  }
+}
+
 /*
  * variable spacer
  *
@@ -108,6 +114,19 @@ $w-4: 40px;
 $w-5: 50px;
 $w-6: 60px;
  
+$w: (
+  "w-1": $w-1,
+  "w-2": $w-2,
+  "w-3": $w-3,
+  "w-4": $w-4,
+  "w-5": $w-5,
+);
+
+@each $key, $val in $w {
+  .#{$key} {
+    width: $val;
+  }
+}
 /*
  * height in percent
  *

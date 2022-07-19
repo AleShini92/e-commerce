@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import Skeleton from 'react-loading-skeleton';
 
 const Products = () => {
 
@@ -29,31 +30,58 @@ const Products = () => {
     const Loading = () => {
         return (
             <>
-                Loading...
+                <Skeleton height={350} />
+                <Skeleton height={350} />
+                <Skeleton height={350} />
+                <Skeleton height={350} />
             </>
         );
+    };
+
+    const filterProduct = (cat) => {
+        const updateList = data.filter((x) => x.category === cat);
+        setFilter(updateList);
     }
 
     const ShowProducts = () => {
         return (
             <>
                 <div className="buttons">
-                    <button className='button btn btn-black'>All</button>
-                    <button className='button btn btn-black'>Men's Clothing</button>
-                    <button className='button btn btn-black'>Women's Clothing</button>
-                    <button className='button btn btn-black'>Jewelery</button>
-                    <button className='button btn btn-black'>Electronic</button>
+                    <button className='button btn btn-black' onClick={() => setFilter(data)}>All</button>
+                    <button className='button btn btn-black' onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+                    <button className='button btn btn-black' onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
+                    <button className='button btn btn-black' onClick={() => filterProduct("jewelery")}>Jewelery</button>
+                    <button className='button btn btn-black' onClick={() => filterProduct("electronics")}>Electronic</button>
                 </div>
+                <div className="wrapper-card d-flex p-2">
+                    {filter.map((product) => {
+                        return(
+                            <>
+                                <div className="card outline-bg b-radius-2 p-1 w-2 txt-center">
+                                    <figure key={product.id}>
+                                        <img src={product.image} alt={product.title.substring(0, 12)} />
+                                        <figcaption>
+                                            <h5>{product.title}</h5>
+                                            <p>${product.price}</p>
+                                            <a className='button btn btn-black' href="#">Buy now</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </>
+                        );
+                    })}
+                </div>
+
             </>
         );
     }
 
     return (
         <>
-            <div className="wrapper-products">
-                <h2>Latest products</h2>
+            <article className="wrapper-products">
+                <h2 className='title'>Latest products</h2>
                 {loading ? <Loading /> : <ShowProducts />}
-            </div>
+            </article>
         </>
     );
 }
