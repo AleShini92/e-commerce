@@ -1,10 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import headerBg from '../assets/headerBg.png';
 
 const Header = () => {
     return (
         <>
+            <Helmet>
+                <title>
+                    Home | e-commerce
+                </title>
+            </Helmet>
             <header>
                 <div className="wrapper-header bg-dark-blue p-1">
                     <figure>

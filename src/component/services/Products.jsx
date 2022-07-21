@@ -1,5 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import Skeleton from 'react-loading-skeleton';
+import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Products = () => {
 
@@ -63,7 +65,7 @@ const Products = () => {
                                         <figcaption>
                                             <h5>{product.title}</h5>
                                             <p>${product.price}</p>
-                                            <a className='button btn btn-black' href="#">Buy now</a>
+                                            <NavLink className='button btn btn-black' to={`/products/${product.id}`}>Buy now</NavLink>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -78,6 +80,11 @@ const Products = () => {
 
     return (
         <>
+            <Helmet>
+                <title>
+                    Products
+                </title>
+            </Helmet>
             <article className="wrapper-products">
                 <h2 className='title'>Latest products</h2>
                 {loading ? <Loading /> : <ShowProducts />}

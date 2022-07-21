@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './component/Header';
 import Main from './component/Main';
 import Navbar from './component/navbar/Navbar';
+import Product from './component/Product';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/header" element={<Header />} />
         <Route exact path="/Products" element={<Main />} />
+        <Route exact path="/Product:id" element={<Product />} />
       </Routes>
     </>
   );
