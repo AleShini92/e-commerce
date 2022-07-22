@@ -39,10 +39,6 @@ $colors: (
   .btn-#{$key} {
     border: 1px solid $val;
   }
-
-  .outline-#{$key} {
-    border: 1px solid $val;
-  }
 }
 
 // scss-docs-start theme-color-variables
@@ -52,3 +48,40 @@ $_delete:       $_red;
 $_hover:        $_dark-blue;
 $_primary:      $_blue;
 $_success:      $_green;
+
+
+// text-color map black variant
+
+$black: #000000;
+$black-90: #191919;
+$black-80: #333333;
+$black-70: #4D4D4D;
+$black-60: #666666;
+$black-50: #808080;
+$black-40: #999999;
+$black-30: #B3B3B3;
+$black-20: #CCCCCC;
+$black-10: #E6E6E6;
+
+$textColor: (
+  "black":  $black,
+  "90":     $black-90,
+  "80":     $black-80,
+  "70":     $black-70,
+  "60":     $black-60,
+  "50":     $black-50,
+  "40":     $black-40,
+  "30":     $black-30,
+  "20":     $black-20,
+  "10":     $black-10,
+) !default;
+
+@each $key, $val in $textColor {
+  .txt-black-#{$key} {
+    color: $val;
+  }
+
+  .outline-#{$key} {
+    border: 1px solid $val;
+  }
+}

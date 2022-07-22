@@ -21,7 +21,7 @@ $font: (
     }
 }
 
-$title: (
+$heading: (
     "h1": 28px,
     "h2": 26px,
     "h3": 24px,
@@ -30,7 +30,7 @@ $title: (
     "h6": 18px,
 );
 
-@each $key, $val in $title {
+@each $key, $val in $heading {
     #{$key} {
         font-size: $val;
     }

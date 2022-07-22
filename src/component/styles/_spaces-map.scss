@@ -38,11 +38,12 @@ $m-40: 40px;
 $m-50: 50px;
 
 $margin: (
-  "m-10": $m-10,
-  "m-20": $m-20,
-  "m-30": $m-30,
-  "m-40": $m-40,
-  "m-50": $m-50
+  "m-auto": $m-auto,
+  "m-10":   $m-10,
+  "m-20":   $m-20,
+  "m-30":   $m-30,
+  "m-40":   $m-40,
+  "m-50":   $m-50
 );
 
 @each $key, $val in $margin {
@@ -50,7 +51,33 @@ $margin: (
     margin: $val;
   }
 }
+
+$margins: (
+  "10":   $m-10,
+  "20":   $m-20,
+  "30":   $m-30,
+  "40":   $m-40,
+  "50":   $m-50
+);
  
+@each $key, $val in $margins {
+  .mt-#{$key} {
+    margin-top: $val;
+  }
+
+  .mr-#{$key} {
+    margin-right: $val;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $val;
+  }
+
+  .ml-#{$key} {
+    margin-left: $val;
+  }
+}
+
 /*
  * padding in pixel
  *

@@ -15,13 +15,13 @@ a {
 }
 
 .btn {
-    background: transparent;
-    padding: s.$s-2 s.$s-2;
+    padding: s.$s-2;
 }
 
 // custom all button
 .button {
     border-radius: s.$s-1;
+    cursor: pointer;
     transition: .8s ease-in-out;
 
     &:hover {
@@ -35,7 +35,27 @@ a {
     display: flex;
 }
 
+.d-block {
+    display: block;
+}
+
 //text-align
 .txt-center {
     text-align: center;
+}
+
+//text-appercase
+
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+.txt-lighter {
+    font-weight: lighter;
+}
+
+//column gap
+
+.c-gap-20 {
+    column-gap: 20px;
 }
