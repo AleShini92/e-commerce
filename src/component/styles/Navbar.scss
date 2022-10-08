@@ -1,5 +1,9 @@
 nav {
+    background: $_white;
     box-shadow: 0 3px 5px rgba($color: $_black, $alpha: .10);
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .menu {

@@ -1,6 +1,8 @@
 .wrapper-header {
     height: 95vh;
     overflow: hidden;
+    position: absolute;
+    inset: 50px 0 0 0;
 
     figure {
         display: flex;
