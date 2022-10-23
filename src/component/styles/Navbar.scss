@@ -11,6 +11,24 @@ nav {
         li {
             display: inline;
             margin: 0 $s-2;
+            position: relative;
+
+            &::after {
+                content: '';
+                background: $_black;
+                height: 1px;
+                position: absolute;
+                top: 28px;
+                left: 0;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform .25s ease;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+            }
 
             a {
                 color: $_link;
