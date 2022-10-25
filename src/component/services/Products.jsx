@@ -59,7 +59,7 @@ const Products = () => {
                     {filter.map((product) => {
                         return(
                             <>
-                                <div className="card outline-bg b-radius-2 p-1 w-2 txt-center">
+                                <div className="card outline-20 b-radius-2 p-1 w-2 txt-center">
                                     <figure key={product.id}>
                                         <img src={product.image} alt={product.title.substring(0, 12)} />
                                         <figcaption>
