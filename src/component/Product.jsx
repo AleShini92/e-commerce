@@ -1,13 +1,20 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { NavLink, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addCart } from "../redux/action";
 
 const Product = () => {
 
     const {id} = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
+
+    const dispatch = useDispatch();
+    const addProduct = (product) => {
+        dispatch(addCart(product));
+    }
 
     useEffect(() => {
         const getProduct = async () => {
@@ -45,7 +52,7 @@ const Product = () => {
                             <h6 className="mt-10 mb-10">${product.price}</h6>
                             <figcaption>{product.description}</figcaption>
                             <div className="d-flex mt-20">
-                                <span className="button btn btn-black mr-10">Add to card</span>
+                                <span className="button btn btn-black mr-10" onClick={() => addProduct(product)}>Add to card</span>
                                 <NavLink to="/cart" className="button btn btn-black bg-black text-white">
                                     Go to cart
                                 </NavLink>
