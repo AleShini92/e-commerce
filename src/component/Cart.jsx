@@ -4,8 +4,8 @@ import { delCart } from "../redux/action";
 
 
 const Cart = () => {
-    const state = useSelector((state) => state.addItem)
-    const dispatch = useDispatch()
+    const state = useSelector((state) => state.addItem);
+    const dispatch = useDispatch();
 
     const cartItems = (product) => {
         return (
@@ -18,7 +18,8 @@ const Cart = () => {
 
     return (
         <>
-            {state.length !== 0 && state.map(cartItems)}
+        <div>{cartItems}</div>
+            {/* {state.length !== 0 && state.map(cartItems)} */}
         </>
     )
 }
