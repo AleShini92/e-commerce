@@ -1,5 +1,6 @@
 nav {
-    background: $_white;
+    // background: $_white;
+    // color: $_black;
     box-shadow: 0 3px 5px rgba($color: $_black, $alpha: .10);
     position: fixed;
     top: 0;
@@ -10,20 +11,19 @@ nav {
     ul {
         li {
             display: inline;
-            margin: 0 $s-2;
+            margin-inline: $s-2;
             position: relative;
 
             &::after {
-                content: '';
                 background: $_black;
-                height: 1px;
+                content: '';
+                height: .09em;
+                inset: 28px 0 0 0;
                 position: absolute;
-                top: 28px;
-                left: 0;
-                width: 100%;
                 transform: scaleX(0);
                 transform-origin: left;
                 transition: transform .25s ease;
+                width: 100%;
             }
 
             &:hover::after {
@@ -48,14 +48,18 @@ nav {
         width: 15px;
     }
 
-    a, svg {
+    :where(a, svg) {
         transition: 1s ease-in-out;
     }
 
-    &:hover a, &:hover svg {
+    :where :hover(a, svg) {
         color: $_white;
         fill: $_white;
     }
+    // &:hover a, &:hover svg {
+    //     color: $_white;
+    //     fill: $_white;
+    // }
 }
 
 .wrapper-button {
@@ -67,6 +71,6 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
     margin: 0 auto;
+    width: min(50%, 1440px);
 }

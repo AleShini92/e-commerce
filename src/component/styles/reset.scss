@@ -39,13 +39,16 @@ a {
     display: block;
 }
 
+.d-inline-block {
+    display: inline-block;
+}
+
 //text-align
 .txt-center {
     text-align: center;
 }
 
 //text-appercase
-
 .txt-uppercase {
     text-transform: uppercase;
 }
@@ -55,7 +58,40 @@ a {
 }
 
 //column gap
-
 .c-gap-20 {
     column-gap: 20px;
+}
+
+
+:root {
+    color-scheme: dark light;
+    color: $_black;
+    background-color: $_white;
+    h1, a{
+        color: $_black;
+    }
+    svg {
+        fill: $_black;
+    }
+    nav {
+        background: $_white;
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    :root {
+        color: #fff;
+        background-color: #212121;
+
+        h1, a{
+            color: $_black;
+        }
+        svg {
+            fill: $_black;
+        }
+    
+        nav {
+            background: #212121;
+        }
+    }
 }

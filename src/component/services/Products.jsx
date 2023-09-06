@@ -55,17 +55,17 @@ const Products = () => {
                     <button className='button btn btn-black' onClick={() => filterProduct("jewelery")}>Jewelery</button>
                     <button className='button btn btn-black' onClick={() => filterProduct("electronics")}>Electronic</button>
                 </div>
-                <div className="wrapper-card d-flex p-2">
+                <div className="wrapper-card d-flex p-2 w-60">
                     {filter.map((product) => {
                         return(
                             <>
-                                <div className="card outline-bg b-radius-2 p-1 w-2 txt-center">
-                                    <figure key={product.id}>
+                                <div className="card txt-center">
+                                    <figure key={product.id} class="p-1">
                                         <img src={product.image} alt={product.title.substring(0, 12)} />
-                                        <figcaption>
+                                        <figcaption className='mt-30'>
                                             <h5>{product.title}</h5>
                                             <p>${product.price}</p>
-                                            <NavLink className='button btn btn-black' to={`/products/${product.id}`}>Buy now</NavLink>
+                                            <NavLink className='button btn btn-black d-inline-block' to={`/products/${product.id}`}>Buy now</NavLink>
                                         </figcaption>
                                     </figure>
                                 </div>

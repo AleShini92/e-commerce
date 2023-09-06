@@ -21,22 +21,22 @@
 }
 
 .wrapper-card {
+    display: grid;
     flex-wrap: wrap;
     gap: 30px;
-    width: $w-60;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
     .card {
-        flex-wrap: wrap;
-        flex: 1 0 200px;
+        height: auto;
 
         img {
-            width: 200px;
+            width: 100%;
         }
 
         figcaption {
 
             p {
-                margin: $m-10 0;
+                margin-block: $m-10;
             }
         }
     }
