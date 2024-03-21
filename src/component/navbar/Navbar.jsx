@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <>
             <nav className="w-100 p-1 bg-white">
                 <div className="wrapper-navbar">
-                    <div className="logo"> <NavLink to="/header"> <h1>E-commerce</h1> </NavLink> </div>
+                    <div className="logo"> <NavLink to="/"> <h1>E-commerce</h1> </NavLink> </div>
                     <div className="menu">
                         <ul>
-                            <li><NavLink to="/header">home</NavLink></li>
+                            <li><NavLink to="/">home</NavLink></li>
                             <li><NavLink to="/products">Products</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>

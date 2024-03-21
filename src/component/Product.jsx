@@ -3,7 +3,7 @@ import React, { useState, useEffect} from "react";
 import { Helmet } from "react-helmet";
 import { NavLink, useParams } from "react-router-dom";
 
-const Product = () => {
+export const Product = () => {
 
     const {id} = useParams();
     const [product, setProduct] = useState([]);

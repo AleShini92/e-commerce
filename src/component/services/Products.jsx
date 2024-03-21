@@ -2,8 +2,9 @@ import React, { useState, useEffect} from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Navbar from '../navbar/Navbar';
 
-const Products = () => {
+export const Products = () => {
 
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
@@ -84,6 +85,7 @@ const Products = () => {
                     Products
                 </title>
             </Helmet>
+            <Navbar />
             <article className="wrapper-products">
                 <h2 className='title'>Latest products</h2>
                 {loading ? <Loading /> : <ShowProducts />}
