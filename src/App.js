@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 //import components
-import Main from './component/Main';
-import Products from './component/services/Products';
-import Product from './component/Product';
+import { Main } from './component/Main';
+import { Products } from './component/services/Products';
+import { Product } from './component/Product';
 
 
 

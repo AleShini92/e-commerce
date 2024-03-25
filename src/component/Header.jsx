@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import headerBg from '../assets/headerBg.png';
 
-const Header = () => {
+export const Header = () => {
     return (
         <>
             <Helmet>

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <>
             <nav className="w-100 p-1 bg-white">
