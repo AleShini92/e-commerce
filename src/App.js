@@ -17,8 +17,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<Main />} />
-          <Route exact path='/products' element={<Products />} />
-          <Route exact path='/product' element={<Product />} />
         </Routes>
       </Router> 
     </>

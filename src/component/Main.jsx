@@ -2,11 +2,8 @@ import React from "react";
 
 
 //import website
+import { Navbar } from './navbar/Navbar';
 
-import { Navbar } from "./navbar/Navbar";
-import { Header } from "./Header";
-import { Products } from "./services/Products";
-import { Product } from "./Product";
 
 
 export const Main = () => {
@@ -14,9 +11,6 @@ export const Main = () => {
         <>
             <main>
                 <Navbar />
-                <Header />
-                <Products />
-                <Product />
             </main>
         </>
     );
