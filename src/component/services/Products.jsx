@@ -3,7 +3,7 @@ import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-const Products = () => {
+export const Products = () => {
 
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);

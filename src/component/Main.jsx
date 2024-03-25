@@ -1,12 +1,16 @@
 import React from "react";
-import Products from "../component/services/Products";
 
 
-const Main = () => {
+//import website
+import { Navbar } from './navbar/Navbar';
+
+
+
+export const Main = () => {
     return (
         <>
             <main>
-                <Products />
+                <Navbar />
             </main>
         </>
     );
