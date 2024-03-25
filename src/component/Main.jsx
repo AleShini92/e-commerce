@@ -1,12 +1,22 @@
 import React from "react";
-import Products from "../component/services/Products";
+
+
+//import website
+
+import Navbar from "./navbar/Navbar";
+import Header from "./Header";
+import Products from "./services/Products";
+import Product from "./Product";
 
 
 const Main = () => {
     return (
         <>
             <main>
+                <Navbar />
+                <Header />
                 <Products />
+                <Product />
             </main>
         </>
     );
