@@ -9,8 +9,8 @@ export const Navbar = () => {
                     <div className="logo"> <NavLink to="/header"> <h1>E-commerce</h1> </NavLink> </div>
                     <div className="menu">
                         <ul>
-                            <li><NavLink to="/header">home</NavLink></li>
-                            <li><NavLink to="/products">Products</NavLink></li>
+                            <li><NavLink to="/home">home</NavLink></li>
+                            <li><NavLink to="/product">Products</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>

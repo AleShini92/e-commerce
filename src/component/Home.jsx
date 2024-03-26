@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import headerBg from '../assets/headerBg.png';
 
-export const Header = () => {
+export const Home = () => {
     return (
         <>
             <Helmet>
@@ -26,4 +26,4 @@ export const Header = () => {
     );
 }
 
-export default Header;
+export default Home;

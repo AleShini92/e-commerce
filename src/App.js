@@ -1,26 +1,35 @@
-//import style scss
-import './App.scss';
-//
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+/**
+ * Import react-router-dom for implement the navigation of the pages:
+ * npm i react-router-dom
+ * 
+ * Install the last version of React:
+ * npm install react@18 react-dom@18
+**/
 
 
-//import components
-import { Main } from './component/Main';
-import { Products } from './component/services/Products';
-import { Product } from './component/Product';
+
+
+// Import website folder and blog
+import Main from './component/Main';
+import Home from './component/Home';import Navbar from './component/navbar/Navbar';
+import Products from './component/services/Products';
 
 
 
 function App() {
-  return (
-    <>
-      <Router>
-        <Routes>
-          <Route exact path='/' element={<Main />} />
-        </Routes>
-      </Router> 
-    </>
-  );
+    return (
+      <>
+        <main>
+          <Navbar />
+            <Routes>
+              <Route exact path='/e-commerce' element={<Main />} />
+              <Route exact path='/' element={<Main />} />
+              <Route exact path='/home' element={<Home />} />
+              <Route exact path='/product' element={<Products />} />
+            </Routes>
+        </main>
+      </>
+    )
 }
-
-export default App;
+export default App

@@ -1,19 +1,18 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 
-//import website
-import { Navbar } from './navbar/Navbar';
 
+import Home from "./Home";
 
 
 export const Main = () => {
     return (
         <>
-            <main>
-                <Navbar />
-            </main>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
         </>
-    );
+    )
 }
 
 export default Main;
